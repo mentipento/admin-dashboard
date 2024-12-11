@@ -13,17 +13,71 @@ body {
     grid-template-rows: 100vh;
 }
 
+.sidebar {
+    background-color: #1A92D5;
+}
+
 .main {
     display: grid;
     grid-template-rows: 1fr 5fr;
+    background-color: #E2E8F0;
 }
 
 .content {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    overflow: auto;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: 6vh 200px;
+    grid-auto-rows: 200px;
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem
+}
+
+.project {
+    background-color: white;
+}
+
+.project-header {
+    grid-column: 1 / -1;
 }
 
 .news {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 0.9fr;
+}
+
+.announcements {
+    display: grid;
+    grid-template-rows: 6vh;
+}
+
+.announcements-content {
+    display: grid;
+    grid-template-rows: repeat(3, 12vh);
+    margin-top: 1rem;
+}
+
+.announcement-item {
+    background-color: white;
+}
+
+.trending {
+    display: grid;
+    grid-template-rows: 6vh 20vh;
+}
+
+.trending-content {
+    display: grid;
+    grid-template-rows: repeat(4, 7vh);
+    margin-top: 1rem;
+}
+
+.trending-item {
+    background-color: white;
 }
