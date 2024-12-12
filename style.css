@@ -175,6 +175,23 @@ border: 1px solid #1A92D5;
     border-radius: 8px;
     box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.5);
     border-left: 10px solid #F48301;
+    display: flex;
+    flex-direction: column;
+}
+
+.project .icons {
+    margin-top: auto;
+    align-self: flex-end;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.icons img {
+    width: 25px;
 
 }
 
@@ -216,12 +233,13 @@ border: 1px solid #1A92D5;
     padding: 20px 30px;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    gap: 10px
+    gap: 10px;
+    align-items: center;
 }
 
 .trending-content img {
     border-radius: 50%;
-    width: 45px;
+    width: 55px;
 }
 
 .trending-item p:first-of-type {
