@@ -39,6 +39,11 @@ body {
     border-radius: 20px;
     margin-right: auto;
     border: none;
+    font-size: inherit;
+}
+
+.searchbar:active {
+    outline: 2px solid #1A92D5;
 }
 
 .profile-picture {
@@ -80,9 +85,10 @@ body {
     font-size: inherit;
     background-color: #1A92D5;
     color: white;
-    padding: 6px 20px;
-    border-radius: 15px;
+    padding: 7px 25px;
+    border-radius: 20px;
     border: 1px solid white;
+    font-weight: bold;
 }
 
 .header button:hover {
