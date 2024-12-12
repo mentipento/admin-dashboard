@@ -1,17 +1,22 @@
 * {
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    height: 100vh;
+    height: 120vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 100vh;
+    grid-template-rows: 120vh;
 }
 
 .header {
@@ -135,12 +140,15 @@ border: 1px solid #1A92D5;
     background-color: #E2E8F0;
 }
 
+.main h2 {
+    padding: 20px 0px 10px 5px;
+}
+
 .content {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    overflow: auto;
 }
-
+/* 
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -148,7 +156,8 @@ border: 1px solid #1A92D5;
     grid-auto-rows: 200px;
     gap: 1rem;
     margin-left: 1rem;
-    margin-right: 1rem
+    margin-right: 1rem;
+    overflow: ;
 }
 
 .project {
@@ -157,12 +166,31 @@ border: 1px solid #1A92D5;
 
 .project-header {
     grid-column: 1 / -1;
-}
+}  */
 
 .news {
     display: grid;
-    grid-template-rows: 1fr 0.9fr;
+    grid-template-rows: 1fr 1fr;
 }
+
+.announcements-content {
+    background-color: white;
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    display: grid;
+    gap: 15px
+}
+
+.announcements .headline {
+    font-weight: bold;
+    padding: 5px 0px;
+}
+
+.announcements hr {
+    margin-top: 15px;
+}
+
+/*
 
 .announcements {
     display: grid;
@@ -192,4 +220,4 @@ border: 1px solid #1A92D5;
 
 .trending-item {
     background-color: white;
-}
+} */
