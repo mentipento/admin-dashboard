@@ -50,6 +50,47 @@ body {
     font-size: 1.2rem;
 }
 
+.header-down {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 5px;
+    padding: 5px 15px
+}
+
+.greeting {
+    margin-right: auto;
+}
+
+.greeting p {
+    margin: 0;
+    padding: 0;
+}
+
+.greeting .salutation {
+    font-weight: bold;
+}
+
+.greeting .nickname {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.header button {
+    font-size: inherit;
+    background-color: #1A92D5;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+.header button:hover {
+background-color: white;
+color: #1A92D5;
+border: 1px solid #1A92D5;
+}
+
 .sidebar {
     background-color: #1A92D5;
     color: white;
