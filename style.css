@@ -193,7 +193,18 @@ border: 1px solid #1A92D5;
 
 .icons img {
     width: 25px;
+}
 
+.share-icon:hover {
+    content: url("media/share-variant-outline-hover.svg");
+}
+
+.favorite-icon:hover {
+    content: url("media/star-plus-outline-hover.svg");
+}
+
+.seen-icon:hover {
+    content: url("media/eye-plus-outline-hover.svg");
 }
 
 .project p {
